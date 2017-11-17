@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>クライアントサイドOCRテスト</title>
+    <meta charset="utf-8">
+    <script src="https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="test.js"></script>
+  </head>
+  <body>
+    <h1>これはなに？</h1>
+    ファイルを選択すると、クライアントサイドでOCRして、なんとなく出力するやつです。CPU滅茶食うので注意。
+    <h1>実装手段</h1>
+    <a href='https://github.com/naptha/tesseract.js'>https://github.com/naptha/tesseract.js</a>
+    <h1>インプット</h1>
+    <input type="file" id="input" onchange="ocr();">
+    <h1>アウトプット</h1>
+    <h2>入力画像</h2>
+    <div id="imgout"></div>
+    <h2>出力文字</h2>
+    <hr>
+    <div id="txtout"></div>
+    <hr>
+  </body>
+</html>
